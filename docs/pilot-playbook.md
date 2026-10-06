@@ -12,7 +12,7 @@ This is an operating playbook, not a claim that a public service, regulated paym
 
 **Useful categories:** pre-loved goods, local craft, fashion, home, children’s items, electronics, business tools and sport. Categories may be restricted further when moderation or safety capacity is not ready.
 
-**Currency:** Namibia dollars, consistently formatted as `N$`.
+**Currency:** Namibian dollars, consistently formatted as `N$`.
 
 **Discovery unit:** approximate neighbourhood or public trading area. Never a seller’s private address.
 
@@ -243,4 +243,3 @@ SoekIets should not expand beyond Windhoek because the map looks small. Expansio
 - a repeatable method for mapping areas without exposing exact locations.
 
 The next city or town is a new operating context, not a copy-and-paste switch.
-

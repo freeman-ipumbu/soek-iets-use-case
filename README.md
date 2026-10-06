@@ -46,7 +46,7 @@ SoekIets keeps identity status, listing evidence, payment state, handover confir
 
 ### 4. Built for local commerce
 
-Prices are expressed in **Namibia dollars (`N$`)**. The writing, trading radii, examples and safety patterns are designed around Windhoek rather than copied from a generic global marketplace.
+Prices are expressed in **Namibian dollars (`N$`)**. The writing, trading radii, examples and safety patterns are designed around Windhoek rather than copied from a generic global marketplace.
 
 ### 5. Small traders are first-class participants
 
@@ -120,4 +120,3 @@ Public availability is not the finish line; it is the point at which every adver
 ## Repository boundary
 
 This repository may be useful to marketplace founders, product teams, potential partners and community stakeholders evaluating the SoekIets use case. It is **not an open-source release** and does not grant a licence to reuse the name, artwork, copy or product design. See [NOTICE.md](NOTICE.md).
-
