@@ -2,17 +2,17 @@
 
 > **Soek Iets** — “look for something” in Afrikaans.
 
-![Soek.Iets private-pilot campaign template](assets/social/launch-square.png)
+![Soek.Iets public-test campaign template](assets/social/launch-square.png)
 
 Soek.Iets is a Windhoek-first marketplace concept built around a simple local truth: the most useful seller may already be in your neighbourhood, but today it can be difficult to discover that person, assess the trade and know which signals to trust.
 
-The product starts with **approximate neighbourhood discovery**, then lets a buyer widen the circle to nearby areas or all of Windhoek. The illustrative preview catalogue explains its modelled recommendation reasons, while approved live listings use simple proximity-and-recency ordering. A future trade-linked reputation system is designed to rely on eligible recorded trades—not paid badges or social-media popularity—but it is not active in the private pilot.
+The product starts with **approximate neighbourhood discovery**, then lets a buyer widen the circle to nearby areas or all of Windhoek. The illustrative preview catalogue explains its modelled recommendation reasons, while approved live listings use simple proximity-and-recency ordering. A future trade-linked reputation system is designed to rely on eligible recorded trades—not paid badges or social-media popularity—but it is not active in the public test pilot.
 
 This repository is a **public use-case and product-design record**. It intentionally excludes application source code, database schemas, credentials, private deployment configuration and operational security details.
 
 ## Product status
 
-Soek.Iets is currently a **private pilot build**, not a publicly launched or regulated payment service.
+Soek.Iets is currently an **access-code-controlled public test pilot**, not a commercial launch or regulated payment service. The working build is available at [soek-iets.pages.dev](https://soek-iets.pages.dev/).
 
 | Capability | Status | What that means |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ Soek.Iets is currently a **private pilot build**, not a publicly launched or reg
 | Policy acceptance | Built for pilot | Onboarding records the accepted Terms, Privacy and Community Rules versions. A future material policy update still requires an approved re-acceptance process. |
 | Marketplace dashboard | Built for pilot | Listings, requests, seller responses, sent activity and participant-only enquiry threads in one place. Listing owners can edit, pause, mark sold, remove or resubmit within the defined lifecycle. |
 | Operations console | Built for pilot | Queues for listing review, Soek Request review, seller readiness, trust cases and attributed administrative actions. |
-| Trade completion, reviews and reputation | Planned | The product design and labelled illustrative signals exist, but the private pilot does not record platform trade completion or offer trade-linked reviews or behaviour-based reputation. |
+| Trade completion, reviews and reputation | Planned | The product design and labelled illustrative signals exist, but the public test pilot does not record platform trade completion or offer trade-linked reviews or behaviour-based reputation. |
 | TPTS identity/payment rails | Partner-gated | Not active. Activation requires signed scope, authorised providers, technical certification and operating procedures. |
 | Protected payment, OTP handover and settlement | Planned | Never represented as live until the relevant provider and production checks are complete. |
 | Integrated delivery | Planned | Handover guidance exists; no delivery provider, tracking or delivery guarantee is active. |
@@ -46,7 +46,7 @@ The illustrative preview catalogue can say why an example appears, such as “in
 
 ### 3. Trust is a stack
 
-The Soek.Iets design keeps current listing publication review separate from future identity status, payment state, handover confirmation and trade reputation. In the private pilot, the active evidence is seller-supplied listing facts and item photos reviewed by a human operator; publication is not identity, ownership, authenticity, payment or completion proof. If future layers activate, one badge must not conceal weaknesses elsewhere in a trade.
+The Soek.Iets design keeps current listing publication review separate from future identity status, payment state, handover confirmation and trade reputation. In the public test pilot, the active evidence is seller-supplied listing facts and item photos reviewed by a human operator; publication is not identity, ownership, authenticity, payment or completion proof. If future layers activate, one badge must not conceal weaknesses elsewhere in a trade.
 
 ### 4. Built for local commerce
 
@@ -124,9 +124,9 @@ The product is deliberately split into three layers:
 
 ## Launch principle
 
-The private-to-public path is intentionally gated. The full build currently depends on an owner-private ChatGPT Sites authentication boundary. It must not be copied unchanged to ordinary public hosting: public access requires cryptographically verified portable sessions, stripped client-supplied identity headers, cross-site request protection, independently secured administration and tested session expiry/revocation.
+The public test build uses first-party, revocable server sessions, one-way password and session-token hashes, host-only secure cookies, same-origin write protection and a separately allowlisted operations surface. New accounts require a pilot access code. Email verification, recovery and launch-grade identity-provider assurance are deliberately reserved for the owned-domain authentication pass.
 
-A public release should happen only when that authentication boundary, the product, operating team, legal documents, safety response, partner scope, security review and production reconciliation can support the promise shown on screen. A read-only showcase is not equivalent to launching authenticated marketplace writes.
+Commercial launch should happen only when the verified identity boundary, product, operating team, legal documents, safety response, partner scope, security review and production reconciliation can support the promise shown on screen. A public test pilot is not equivalent to unrestricted promotion.
 
 Public availability is not the finish line; it is the point at which every advertised protection must become an operational obligation.
 

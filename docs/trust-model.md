@@ -32,7 +32,7 @@ Soek.Iets assumes that a friendly profile, a familiar neighbourhood and a convin
 
 ## The target six-layer evidence stack
 
-Only seller-supplied listing facts and photos, human publication review, reporting and moderation operate in the current private pilot. Provider identity, protected payment, recorded handover, platform completion, trade-linked reviews and behaviour-based reputation are future or partner-gated layers.
+Only seller-supplied listing facts and photos, human publication review, reporting and moderation operate in the current public test pilot. Provider identity, protected payment, recorded handover, platform completion, trade-linked reviews and behaviour-based reputation are future or partner-gated layers.
 
 ```mermaid
 flowchart TB
@@ -64,7 +64,7 @@ Item trust begins with a current, specific description:
 
 Evidence can improve confidence but should not be described as a guarantee of ownership or quality unless an accountable process actually supports that promise.
 
-During the private pilot, approved listing facts, moderated photos and enquiry routing can operate before mature reputation exists. That boundary must stay visible: publication means marketplace review, not identity verification; delivery to a participant-only thread means an enquiry record reached the listing owner, not that the seller replied or a trade began.
+During the public test pilot, approved listing facts, moderated photos and enquiry routing can operate before mature reputation exists. That boundary must stay visible: publication means marketplace review, not identity verification; delivery to a participant-only thread means an enquiry record reached the listing owner, not that the seller replied or a trade began.
 
 Pilot photo handling validates supported JPEG, PNG and still WebP container structure, strips supported metadata and mediates access. It does not fully decode/re-encode every image on the server, detect steganography, prove the scene is genuine or replace malware and human-content review. Broad public uploads require a maintained transformation and monitoring decision proportionate to the threat model.
 
@@ -90,7 +90,7 @@ Handover should favour sensible public points. The exact agreed meeting detail i
 
 ### 5. Future trade-linked reputation
 
-Trade-linked reviews and behaviour-based reputation are not active in the private pilot. If introduced, reviews should unlock only after an eligible platform-recorded trade. Reputation could then include:
+Trade-linked reviews and behaviour-based reputation are not active in the public test pilot. If introduced, reviews should unlock only after an eligible platform-recorded trade. Reputation could then include:
 
 - fulfilled versus cancelled commitments;
 - condition accuracy;
@@ -184,7 +184,7 @@ The product should never imply that guidance transfers all risk to the user. It 
 
 ## What is intentionally not claimed today
 
-The private pilot does not currently claim:
+The public test pilot does not currently claim:
 
 - completed government-ID verification;
 - integrated or protected payment;

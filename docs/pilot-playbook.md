@@ -144,7 +144,7 @@ stateDiagram-v2
 
 Marketplace readiness and provider verification remain separate throughout this workflow.
 
-The `PartnerPending`, `Verified`, payout-gate and partner-driven activation states above describe the target partner workflow. They are not active identity, payment or payout protections in the current private pilot.
+The `PartnerPending`, `Verified`, payout-gate and partner-driven activation states above describe the target partner workflow. They are not active identity, payment or payout protections in the current public test pilot.
 
 ## Listing lifecycle
 

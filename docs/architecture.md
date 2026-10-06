@@ -204,13 +204,13 @@ This is container validation and metadata scrubbing, not a full server-side code
 
 ## Authentication and hosting boundary
 
-The current full pilot is owner-private and trusts authenticated-user headers supplied by the ChatGPT Sites gateway. Those headers are not a portable public session mechanism. Exposing the unchanged Worker on ordinary public hosting would let the deployment cross a trust boundary it was not designed to defend.
+The public test pilot runs on Cloudflare Pages with first-party, revocable D1-backed sessions. Passwords and opaque session tokens are stored only as one-way hashes, browser cookies are host-only and secure, and client-supplied identity headers are ignored on the public host. New test accounts are access-code controlled; verified email ownership, recovery and the final identity provider remain commercial-launch gates.
 
-A public authenticated marketplace requires cryptographically verified sessions, stripping of client-supplied identity headers, cross-site request protections, session expiry/revocation and independently protected administration. Until that replacement is implemented and tested, the full marketplace remains private. A read-only public product showcase can be deployed separately only if it excludes authenticated APIs and does not imply that marketplace writes are available.
+The current boundary deliberately supports controlled marketplace writes without claiming commercial-launch identity assurance. An unrestricted launch still requires verified email ownership, recovery, final identity-provider and administrator-role hardening, abuse testing and an owned-domain security review.
 
 ## Current boundary and production boundary
 
-The current private pilot includes approximate-neighbourhood discovery, approved live listings and moderated photos, onboarding records with policy-version acceptance, reviewed Soek Requests and seller responses, participant-only enquiry threads, owner listing lifecycle controls, a personal dashboard, operational queues and public policy/status surfaces.
+The current public test pilot includes approximate-neighbourhood discovery, approved live listings and moderated photos, onboarding records with policy-version acceptance, reviewed Soek Requests and seller responses, participant-only enquiry threads, owner listing lifecycle controls, a personal dashboard, operational queues and public policy/status surfaces.
 
 The production boundary additionally requires:
 
@@ -218,7 +218,7 @@ The production boundary additionally requires:
 - Namibia-specific legal and privacy review;
 - signed scope with TPTS and/or another appropriately authorised provider;
 - production identity, payment, settlement and reconciliation contracts;
-- tested authentication and role administration outside the private workshop environment;
+- verified email ownership, recovery and role administration for the owned-domain launch environment;
 - a maintained server-side image transformation and malware-monitoring decision for untrusted uploads;
 - incident, dispute, refund, support and data-retention procedures;
 - threat modelling, penetration testing and dependency review;
