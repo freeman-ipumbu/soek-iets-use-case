@@ -6,7 +6,7 @@
 
 Soek.Iets is a Windhoek-first marketplace concept built around a simple local truth: the most useful seller may already be in your neighbourhood, but today it can be difficult to discover that person, assess the trade and know which signals to trust.
 
-The product starts with **approximate neighbourhood discovery**, then lets a buyer widen the circle to nearby areas or all of Windhoek. The illustrative preview catalogue explains its modelled recommendation reasons, while approved live listings use simple proximity-and-recency ordering. A future trade-linked reputation system is designed to rely on eligible recorded trades—not paid badges or social-media popularity—but it is not active in the public test pilot.
+The product starts with **approximate neighbourhood discovery**, then lets a buyer widen the circle to nearby areas or all of Windhoek. SoekMap brings clearly labelled illustrative buyers, sellers, wanted posts and order runners into that discovery view while keeping approved live listings distinct. The illustrative preview catalogue explains its modelled recommendation reasons, while approved live listings use simple proximity-and-recency ordering. A future trade-linked reputation system is designed to rely on eligible recorded trades—not paid badges or social-media popularity—but it is not active in the public test pilot.
 
 This repository is a **public use-case and product-design record**. It intentionally excludes application source code, database schemas, credentials, private deployment configuration and operational security details.
 
@@ -17,6 +17,7 @@ Soek.Iets is currently an **access-code-controlled public test pilot**, not a co
 | Capability | Status | What that means |
 | --- | --- | --- |
 | Neighbourhood-first discovery | Built for pilot | Browse by an approximate Windhoek area and widen the search radius when needed. |
+| Interactive SoekMap | Built for illustrative preview | Search and filter clearly labelled illustrative buyers, sellers and order runners by item, category, role and approximate area on a real open street map. Approved live listings in the same area remain separately labelled. |
 | Explainable ranking | Built for illustrative preview | The labelled illustrative preview catalogue can cite proximity and modelled fulfilment, freshness and other understandable signals. Approved live listings remain separate and are ordered by approximate distance, then recency. |
 | Approved listings and photos | Built for pilot | Reviewed member listings can enter the live catalogue with up to four access-controlled item photos; illustrative preview stock remains visibly separate. |
 | Soek Requests and seller responses | Built for pilot | Buyer demand enters an approval queue before public display. Eligible sellers can answer an approved open request with one of their own live listings; buyers can shortlist or decline, and sellers can withdraw. |
@@ -40,19 +41,23 @@ The project uses a strict status vocabulary: **built**, **limited**, **partner-g
 
 Discovery begins with an approximate neighbourhood such as Khomasdal, Katutura, Wanaheda, Rocky Crest, Klein Windhoek or Cimbebasia. The product can then widen to neighbouring areas or city-wide results. Public discovery uses a named area rather than a dedicated seller home-address or live-location field; users must keep exact addresses and coordinates out of listing and message text.
 
-### 2. Reasons, not a mysterious feed
+### 2. People and intent, not anonymous pins
+
+SoekMap uses [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/) with [OpenFreeMap](https://openfreemap.org/) street context to make local activity understandable. A map cluster can open a seller shelf, a buyer’s wanted post or an order runner’s service preview; role, item and category filters update the people and approximate neighbourhoods together. The map never presents a home pin, live trail or exact handover point.
+
+### 3. Reasons, not a mysterious feed
 
 The illustrative preview catalogue can say why an example appears, such as “in your neighbourhood”, a clearly modelled fulfilment signal, freshness or limited exploration for a new example seller. Approved live member listings do not use those modelled trust or fulfilment signals; within the selected view they are ordered by approximate distance, then recency. Any future production ranking must describe its real inputs and remain inspectable, measurable and open to human review.
 
-### 3. Trust is a stack
+### 4. Trust is a stack
 
 The Soek.Iets design keeps current listing publication review separate from future identity status, payment state, handover confirmation and trade reputation. In the public test pilot, the active evidence is seller-supplied listing facts and item photos reviewed by a human operator; publication is not identity, ownership, authenticity, payment or completion proof. If future layers activate, one badge must not conceal weaknesses elsewhere in a trade.
 
-### 4. Built for local commerce
+### 5. Built for local commerce
 
 Prices are expressed in **Namibian dollars (`N$`)**. The writing, trading radii, examples and safety patterns are designed around Windhoek rather than copied from a generic global marketplace.
 
-### 5. Small traders are first-class participants
+### 6. Small traders are first-class participants
 
 The seller journey is designed for an individual with a phone and one useful product—not only for a formal retailer with a catalogue and a marketing team.
 
@@ -80,7 +85,7 @@ flowchart LR
 
 The product is deliberately split into three layers:
 
-- **Discovery:** neighbourhood selection, map exploration, product search, requests, labelled illustrative-preview ranking and simple live-listing ordering.
+- **Discovery:** neighbourhood selection, people-and-intent map exploration, product search, requests, labelled illustrative-preview ranking and simple live-listing ordering.
 - **Trust:** current listing facts, photos, publication states, reporting and moderation, plus rules for future reputation features.
 - **Regulated rails:** identity verification, money movement, settlement and provider-specific controls. These activate only after partner and production gates are met.
 

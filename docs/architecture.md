@@ -83,7 +83,7 @@ The discovery centre is an **approximate named area**, not a household pin. The 
 
 If a person chooses to use device location to find the nearest supported area, coordinates should be used only to determine the approximate neighbourhood unless a separate, clearly explained purpose is accepted. Public profiles and search results should expose the area name or an appropriate public trading zone—not a private address.
 
-SoekMap visualises products and demand around approximate area centres. It is a discovery interface, not a live people-tracking map.
+SoekMap uses an open-source vector map as context for approximate-area discovery. Its people layer can represent clearly labelled illustrative sellers, buyers with wanted posts and order runners, filtered by role, item and category. An area cluster opens the relevant preview profile or shelf; it does not reveal a household pin, live trail or exact handover point. Approved member listings remain a separately labelled live supply layer.
 
 Approved database listings and their moderated photos are the live supply layer. Any illustrative preview catalogue or launch artwork must remain labelled and visually separable so it cannot be mistaken for a real seller, testimonial or completed trade.
 
