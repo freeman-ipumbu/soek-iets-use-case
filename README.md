@@ -4,6 +4,13 @@
 
 ![Soek.Iets public-test campaign template](assets/social/launch-square.png)
 
+<table>
+  <tr>
+    <td width="50%"><img src="assets/social/sellers-portrait.png" alt="Soek.Iets seller-first public-test campaign artwork" /></td>
+    <td width="50%"><img src="assets/social/safe-handover-landscape.png" alt="Soek.Iets safe-handover public-test campaign artwork" /></td>
+  </tr>
+</table>
+
 Soek.Iets is a Windhoek-first marketplace concept built around a simple local truth: the most useful seller may already be in your neighbourhood, but today it can be difficult to discover that person, assess the trade and know which signals to trust.
 
 The product starts with **approximate neighbourhood discovery**, then lets a buyer widen the circle to nearby areas or all of Windhoek. SoekMap brings clearly labelled illustrative buyers, sellers, wanted posts and order runners into that discovery view while keeping approved live listings distinct. The illustrative preview catalogue explains its modelled recommendation reasons, while approved live listings use simple proximity-and-recency ordering. A future trade-linked reputation system is designed to rely on eligible recorded trades—not paid badges or social-media popularity—but it is not active in the public test pilot.
@@ -138,3 +145,7 @@ Public availability is not the finish line; it is the point at which every adver
 ## Repository boundary
 
 This repository may be useful to marketplace founders, product teams, potential partners and community stakeholders evaluating the Soek.Iets use case. It is **not an open-source release** and does not grant a licence to reuse the name, artwork, copy or product design. See [NOTICE.md](NOTICE.md).
+
+---
+
+<p align="center"><strong>A Digital Experience by <a href="https://www.solarspin-namibia.xyz/">SolarSpin Technologies</a>.</strong></p>
